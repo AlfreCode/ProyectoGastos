@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!-- CSS Y JS PROPIOS -->
+    <script defer type="module" src="./assets/js/scripts.js"></script>
+
+  </head>
+  <body>
+
+    <main>
+
+<div class = "container row mx-auto my-5">
+    <div class="col-12"> 
+    <h1 class="text-capitalize text-center display-3">presupuesto app</h1>    
+    </div>
+    <div class="col-12 col-md-6">
+        <form id="formPresupuesto" class="border border-3 border-success rounded p-4 bg-success-subtle" >
+            <div class="mb-3">
+              <label for="pptto" class="form-label">Ingresa tu presupuesto</label>
+              <input type="number" class="form-control bg-transparent border border-secondary-subtle border-1" id="pptto" name="pptto">
+            </div>
+                 <button type="submit" class="btn border border-success border-3 rounded btn btn-light">Calcular</button>
+          </form>
+        
+    </div>
+    <div class="col-12 col-md-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">presupuesto</th>
+              <th scope="col">Gastos</th>
+              <th scope="col">Saldos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="tablaPpto">$0</td>
+              <td id="tablaGastos">$0</td>
+              <td id="tablaSaldo" >$0</td>
+            </tr>
+          </tbody>
+        </table>
+
+    </div>
+
+</div>
+<div class="container row mx-auto">
+    <div class="col-12 col-md-6">
+        <form id="formGasto" class="border border-3 border-danger rounded p-4 bg-danger-subtle">
+            <div class="mb-3">
+              <label for="nombreGasto" class="form-label">Ingrese nombre del gasto</label>
+              <input type="text" class="form-control bg-transparent border border-secondary-subtle border-1" id="nombreGasto" name="nombreGasto">
+            </div>
+            <div class="mb-3">
+              <label for="montoGasto" class="form-label">Ingresa monto del gasto</label>
+              <input type="number" class="form-control bg-transparent border border-secondary-subtle border-1" id="montoGasto" name="montoGasto">
+            </div>
+                 <button type="submit" class="btn border border-danger border-3 rounded btn btn-light">Añadir Gasto</button>
+          </form>
+
+    </div>
+    <div class="col-12 col-md-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Gasto</th>
+              <th scope="col">Valor</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody id="displayGastos">
+   
+          </tbody>
+          <thead>
+            <tr>
+              <th scope="col">Total</th>
+              <th scope="col">$0</th>
+            </tr>
+            <tbody>
+
+            </tbody>
+          </thead>
+          
+        </table>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+  </body>
+</html>
